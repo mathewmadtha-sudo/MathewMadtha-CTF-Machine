@@ -1,154 +1,157 @@
 # Cyber Security CTF Machine Development
 
 ## Author
-
-Mathew Madtha
+**Mathew Madtha**
 
 ---
 
 ## Objective
-
-Design and deploy a Capture The Flag (CTF) machine using Kali Linux to simulate a real-world penetration testing environment. The objective of this project is to demonstrate practical skills in reconnaissance, enumeration, web exploitation, privilege escalation, and steganography through a controlled cybersecurity challenge.
+Design and deploy a Capture The Flag (CTF) machine using Kali Linux and Ubuntu to simulate a real-world penetration testing environment.
 
 ---
 
 ## Machine Details
 
-* **Operating System:** Kali Linux
-* **Hostname:** MATHEW-MADTHA
-* **Virtualization Platform:** VMware Workstation
+**Target Machine:** Ubuntu 14.04.6 LTS  
+**Development Environment:** Kali Linux  
+**Hostname:** madtha
 
 ### Open Ports
-
-* **22/TCP** – SSH
-* **80/TCP** – HTTP
+- 22 (SSH)
+- 80 (HTTP)
 
 ---
 
 ## User Accounts
 
-The following user accounts were created for the challenge environment:
+The following user accounts were created:
 
-* mathew
-* mokshith
-* neha
+- mathew
+- mokshith
+- neha
 
 ---
 
 ## Services Configured
 
-The following services were configured on the CTF machine:
-
-* OpenSSH Server
-* Apache2 Web Server
-* Linux User Management
-* Steganography Utilities
+- OpenSSH Server
+- Apache Web Server
+- UFW Firewall
 
 ---
 
 ## Website Features
 
-A professional portfolio website was developed and deployed on the Apache web server. The website includes multiple hidden clues and challenge components.
+A professional portfolio website was developed and hosted using Apache Web Server.
 
-### Hidden Clues Implemented Using:
+### Hidden clues were implemented using:
 
-* HTML comments
-* robots.txt
-* Hidden web pages
-* JavaScript files
-* CSS files
-* Encoded information
-* Steganography techniques
-
----
-
-## Flags
-
-The machine contains multiple challenge flags.
-
-### User Flag
-
-Location:
-
-`/home/mathew/user.txt`
-
-### Root Flag
-
-Location:
-
-`/root/root.txt`
+- HTML Comments
+- robots.txt
+- JavaScript files
+- CSS files
+- Base64 Encoding
 
 ---
 
 ## Steganography Challenge
 
-A steganography challenge was implemented by embedding hidden data within an image file. Participants are required to identify, extract, and analyze the concealed information using appropriate forensic and steganographic techniques.
+A hidden challenge was implemented using steganography.
+
+- Carrier File: `profile.jpg`
+- Hidden File: `resume.pdf`
+- Tool Used: `steghide`
+
+---
+
+## Flag Locations
+
+### User Flag
+```
+/home/wavex/wave/FLAG1.txt
+```
+
+### Root Flag
+```
+/root/FLAG2.txt
+```
 
 ---
 
 ## Tools Used
 
-* Kali Linux
-* Apache2
-* OpenSSH
-* Steghide
-* Linux Command-Line Utilities
-* VMware Workstation
+- Kali Linux
+- Ubuntu 14.04.6 LTS
+- Apache2
+- OpenSSH
+- UFW Firewall
+- Steghide
+- VMware Workstation
 
 ---
 
 ## Execution Flow
 
-1. Perform reconnaissance and service enumeration.
-2. Discover hidden resources through web enumeration.
-3. Analyze hidden clues and encoded information.
-4. Identify user credentials.
-5. Gain SSH access.
-6. Perform privilege escalation.
-7. Capture user and root flags.
-8. Identify and extract hidden data using steganography techniques.
+1. Enumerate the target machine.
+2. Discover hidden files through robots.txt.
+3. Access secret web pages.
+4. Analyze source code and hidden clues.
+5. Extract hidden files using steganography.
+6. Obtain credentials.
+7. Gain SSH access.
+8. Escalate privileges.
+9. Capture the user flag.
+10. Capture the root flag.
 
 ---
 
-## Learning Outcomes
+## Repository Structure
 
-This project demonstrates practical knowledge and experience in:
-
-* Network Reconnaissance
-* Service Enumeration
-* Web Application Enumeration
-* Hidden Resource Discovery
-* Linux User Management
-* Privilege Escalation
-* Steganography
-* Digital Forensics
-* Capture The Flag (CTF) Machine Development
-* Penetration Testing Methodology
+```
+MathewMadtha-CTF-Machine/
+│
+├── README.md
+├── website/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   ├── robots.txt
+│   └── secret.html
+│
+├── screenshots/
+│   ├── 01_hostname.png
+│   ├── 02_user_accounts.png
+│   ├── 03_ssh_status.png
+│   ├── 04_apache_status.png
+│   ├── 05_firewall_status.png
+│   ├── 06_website_files.png
+│   ├── 07_robots_txt.png
+│   ├── 08_secret_page.png
+│   ├── 09_steganography_info.png
+│   ├── 10_user_flag.png
+│   └── 11_root_flag.png
+│
+└── CTF_Report.pdf
+```
 
 ---
 
-## Repository Contents
+## Screenshots Included
 
-The repository contains:
-
-* README.md
-* CTF Report (PDF)
-* Website Source Files
-* Screenshots
-* Exported Virtual Machine Package
+- Hostname Configuration
+- User Account Creation
+- SSH Service Status
+- Apache Service Status
+- Firewall Configuration
+- Website Files
+- robots.txt Enumeration
+- Hidden Web Page
+- Steganography Challenge
+- User Flag
+- Root Flag
 
 ---
 
 ## Conclusion
 
-The CTF machine was successfully designed, configured, and tested in a controlled virtual environment. The project demonstrates the implementation of multiple cybersecurity concepts, including enumeration, exploitation, privilege escalation, and steganography, while providing a practical platform for learning and assessment.
-
----
-
-## Author
-
-**Mathew Madtha**
-
-Cyber Security Laboratory Project
-
-2026
+This project demonstrates the complete design and implementation of a Capture The Flag (CTF) machine. It includes web enumeration, hidden file discovery, steganography, SSH access, privilege escalation concepts, and flag retrieval techniques used in penetration testing and cybersecurity assessments.
