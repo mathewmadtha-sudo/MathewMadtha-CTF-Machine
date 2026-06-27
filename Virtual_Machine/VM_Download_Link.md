@@ -2,7 +2,7 @@
 
 ## Google Drive Download
 
-[Download CTF Virtual Machine ZIP](https://drive.google.com/file/d/1MMgZT0bwbYlxRj5y_BSS2SAK7C30n8UJ/view?usp=drive_link)
+https://drive.google.com/file/d/1MMgZT0bwbYlxRj5y_BSS2SAK7C3On8UJ/view?usp=drive_link
 
 ## Files Included
 - CTF-new final.ovf
