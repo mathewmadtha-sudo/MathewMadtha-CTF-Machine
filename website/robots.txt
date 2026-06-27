@@ -1,0 +1,4 @@
+
+Disallow: /backupUser-agent: *
+
+Disallow: /secret.html
